@@ -1,0 +1,56 @@
+  $color1:Black;
+  $color2:rgb(6, 94, 9);
+  $color3:pink;
+  $color4:salmon;
+
+  .containerHeder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-inline: auto;
+    width: 100%;
+
+  } 
+.link{
+   color:$color2;
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: bold;
+   padding:0 30px;
+   
+  }
+  .link:hover,
+.link-actif
+{
+    text-decoration: underline;
+}
+ 
+  .containerLink{
+    display: flex;
+    justify-content:right;
+    flex-wrap: wrap;
+  }
+  .logo{
+    width: 200px;
+    height: 180px; 
+  }
+
+  @media screen and (max-width:768px)
+  {
+    .logo{
+      width: 120px;
+      height: 100px;
+    }
+    .link{
+      font-size: 20px;
+    }
+    .containerLink{
+      display: flex;
+      flex-direction: column;
+    }
+    .containerHeder{
+      display: flex;
+      flex-direction: column;
+    }
+  }
