@@ -10,34 +10,47 @@
     max-width: 1280px;
     margin-inline: auto;
     width: 100%;
-
   } 
+  .containerLink{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+  }
+  
 .link{
    color:$color2;
    text-decoration: none;
    font-size: 25px;
-   font-weight: bold;
-   padding:0 30px;
-   
+   font-weight: 500;
   }
   .link:hover,
-.link-actif
+  .link-actif
 {
     text-decoration: underline;
 }
- 
-  .containerLink{
-    display: flex;
-    justify-content:right;
-    flex-wrap: wrap;
-  }
   .logo{
     width: 200px;
     height: 180px; 
   }
+  @media screen and (max-width:910px){
+    .logo{
+      width: 150px;
+      height: 130px;
+    }
+    .link{
+      font-size: 22px;
+    }
+  }
 
   @media screen and (max-width:768px)
   {
+    .navigation{
+      margin-bottom: 20px;
+    
+    }
     .logo{
       width: 120px;
       height: 100px;
@@ -48,6 +61,7 @@
     .containerLink{
       display: flex;
       flex-direction: column;
+      gap: 5px;
     }
     .containerHeder{
       display: flex;

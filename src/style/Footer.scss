@@ -3,7 +3,7 @@
      justify-content: center;
      flex-direction: column;
      background: rgb(14, 143, 18);
-     height: 150px;
+     min-height: 150px;
      align-items: center;
      text-align: center;
 
@@ -11,4 +11,5 @@
 .textFooter{
     color: white;
     font-size: 20px;
+    
 }

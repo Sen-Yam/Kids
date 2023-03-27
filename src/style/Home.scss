@@ -1,0 +1,28 @@
+.homeTitle{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+   color: rgb(6, 94, 9);
+}
+.homeTexte{
+    width: 50%;
+}
+.containerText{
+    margin-top: 30px;
+}
+@media screen and (max-width:910px){
+.homeTitle{
+font-size: 25px;
+}
+}
+
+@media screen and (max-width:768px){
+.homeTitle{
+    font-size: 13px;
+    padding-top: 40px;
+}
+.homeTexte{
+    width: 100%;
+}
+}
