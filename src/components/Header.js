@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../style/Header.scss";
 import logo from "../asset/logo.jpg";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className="navigation">
-      <div className="containerHeder">
-        <Link to="/" aria-label="accueil">
-          <img src={logo} alt="logo" className="logo" />
-        </Link>
-        <nav className="containerNav">
+    <header className="containerHeder">
+      <Link to="/" aria-label="accueil">
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
+      <div className="containerButton">
+        <button
+          className={`hamburger${isOpen && !isOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        ></button>
+
+        <nav className={`menu${isOpen ? "open" : ""}`}>
           <div className="containerLink">
             <NavLink
               className={({ isActive }) =>
