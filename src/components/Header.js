@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import "../style/Header.scss";
+import "../style/Header.css";
 import logo from "../asset/logo.jpg";
 
 const Header = () => {
@@ -36,18 +36,27 @@ const Header = () => {
                 isActive ? "link link-actif" : "link"
               }
               end
-              to="/jouets"
+              to="/vendre"
             >
-              <li>Jouets</li>
+              <li>Vendre</li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
                 isActive ? "link link-actif" : "link"
               }
               end
-              to="/promos"
+              to="/bebe"
             >
-              <li>Promotions</li>
+              <li>Bébé</li>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link link-actif" : "link"
+              }
+              end
+              to="/enfant"
+            >
+              <li>Enfant</li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>

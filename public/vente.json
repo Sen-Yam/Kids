@@ -1,0 +1,15 @@
+[ {  
+   "id":1,
+    "type":"jeux de stratégie",
+    "age":"5ans",
+    "prix":"1000",
+    "image":"../asset/imgVoiture.jpg"
+ },
+  { 
+   "id":2,
+    "type":"jouet pour bébé",
+    "age":"moins de 2 ans",
+    "prix":"50da",
+    "image":"../asset/imgCub.jpg"
+}]
+ 

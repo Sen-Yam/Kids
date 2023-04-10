@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fasthand&family=Tajawal:wght@200;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Tajawal", sans-serif;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.theMain {
+  max-width: 1280px;
+  margin-inline: auto;
+  flex: 1 1;
+  padding-inline: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  background: rgb(248, 246, 246);
+}
+
+img {
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

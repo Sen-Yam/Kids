@@ -1,7 +1,7 @@
 import React from "react";
 import bannerHome from "../asset/imgBannerHome.avif";
 
-import "../style/BannerHome.scss";
+import "../style/BannerHome.css";
 
 const BannerHome = ({ children }) => {
   return (

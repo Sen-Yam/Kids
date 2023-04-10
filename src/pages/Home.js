@@ -1,16 +1,37 @@
 import React from "react";
 import BannerHome from "../components/BannerHome";
-import "../style/Home.scss";
+import { Link } from "react-router-dom";
+
+import "../style/Home.css";
 import cub from "../asset/imgCub.jpg";
 import car from "../asset/imgVoiture.jpg";
 
 const Home = () => {
+  document.title = "home";
+  const [data, setData] = React.useState(null);
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
   return (
     <>
       <div className="home">
+        <nav>
+          <ul className="homeUl">
+            <Link>
+              <li className="inscription">Connexion</li>
+            </Link>
+            <Link>
+              <li className="connexion">Inscription</li>
+            </Link>
+          </ul>
+        </nav>
         <BannerHome>
-          <h1 className="homeTitle">La Maison Des Kids</h1>
+          <h1 className="homeTitle">Jouets d'occasion pour vos enfants</h1>
         </BannerHome>
+        <p>{!data ? "Chargement..." : data}</p>
         <div className="containerText">
           <p className="homeTexte">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus

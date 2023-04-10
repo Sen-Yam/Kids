@@ -1,0 +1,75 @@
+.homeUl{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  font-weight:300 ;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', 
+  sans-serif;
+  margin-bottom: 20px;
+}
+
+.inscription{
+  color: rgb(16, 121, 39);
+}
+.connexion{
+  color: rgb(16, 121, 39);
+}
+
+.homeTitle {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  left: 10%;
+}
+
+.homeTexte {
+  width: 58%;
+  font-size: 18px;
+}
+
+.containerText {
+  margin-top: 30px;
+  display: flex;
+}
+
+.homeImg {
+  display: flex;
+  gap: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+@media screen and (max-width: 910px) {
+  .homeTitle {
+    font-size: 40px;
+  }
+  .homeUl{
+    font-size: 17px;
+  }
+  .homeImg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeTitle {
+    font-size: 25px;
+  }
+  .homeUl{
+    font-size: 15px;
+  }
+  .homeTexte {
+    width: 100%;
+  }
+  .containerText {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .homeImg {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

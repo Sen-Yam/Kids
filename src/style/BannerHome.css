@@ -1,0 +1,17 @@
+.bannerHome {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.bannerHome img {
+  max-height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerHome img {
+    max-height: 100px;
+  }
+}
