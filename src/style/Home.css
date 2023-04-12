@@ -1,19 +1,25 @@
 .homeUl{
-  font-size: 20px;
   display: flex;
   flex-direction: row-reverse;
   gap: 30px;
-  font-weight:300 ;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', 
   sans-serif;
   margin-bottom: 20px;
 }
+.homeUl button{
+  font-size: 15px;
+  border: 4px solid rgba(219, 189, 36, 0.975);
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: black;
+  cursor: pointer;
+}
 
 .inscription{
-  color: rgb(16, 121, 39);
+  color: white;
 }
 .connexion{
-  color: rgb(16, 121, 39);
+  color: white;
 }
 
 .homeTitle {
@@ -60,6 +66,9 @@
   }
   .homeUl{
     font-size: 15px;
+  }
+  .homeUl button{
+    font-size: 10px;
   }
   .homeTexte {
     width: 100%;
