@@ -29,7 +29,7 @@ const Home = () => {
           </ul>
         </nav>
         <BannerHome>
-          <h1 className="homeTitle">Jouets d'occasion pour vos enfants</h1>
+          <h1 className="homeTitle">The kids house</h1>
         </BannerHome>
         <p>{!data ? "Chargement..." : data}</p>
         <div className="containerText">
