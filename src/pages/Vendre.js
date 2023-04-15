@@ -9,14 +9,7 @@ const Vendre = () => {
   useEffect(() => {
     setData(products)
 },);
-  /*
-  useEffect(() => {
-    fetch("../vente.json")
-      .then((res) => res.json())
-      .then((jeux) => setData(jeux))
-      .catch((error) => console.error(error));
-    console.log(data);
-  }, []); */
+
   return (
     <div className="jouet">
       <BannerJouets />
